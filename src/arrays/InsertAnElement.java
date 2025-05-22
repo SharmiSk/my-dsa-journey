@@ -3,6 +3,11 @@ package arrays;
 import java.util.Scanner;
 
 public class InsertAnElement {
+    /*🔧 Purpose:
+    This method inserts a new element (ele) at a given position (pos) in the array
+     A, and shifts the rest of the elements to the right to make space.
+      It returns the new size after insertion.
+     */
 
 
 
