@@ -9,7 +9,7 @@ public class Reverse {
 
         int len = sc.nextInt();
 
-        System.out.println("Enter the value of "+ len+"element in the array");
+        System.out.println("Enter the value of " + len + "element in the array");
 
         int A[] = new int[len];
 
@@ -17,29 +17,29 @@ public class Reverse {
             A[i] = sc.nextInt();
         }
         reverse(A);
-for (int i : A){
-    System.out.print(i + " ");
-}
-sc.close();
+        for (int i : A) {
+            System.out.print(i + " ");
         }
+        sc.close();
+    }
 
     public static void reverse(int[] a) {
-        int l =0;
-        int r = a.length-1;
+        int l = 0;
+        int r = a.length - 1;
 
-        while(l < r) {
+        while (l < r) {
             swap(a, l, r);
             l++;
             r--;
         }
 
     }
-    public  static void swap(int A[], int l, int r){
+
+    public static void swap(int A[], int l, int r) {
         int temp = A[l];
-        A[l]=A[r];
-        A[r]=temp;
+        A[l] = A[r];
+        A[r] = temp;
 
 
-
-}
+    }
 }
